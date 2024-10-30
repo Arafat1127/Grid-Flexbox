@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .header, .nav, .main, .first-aside, .second-aside, .footer{
+        border: 2px solid black;
+        background-color: bisque;
+       } 
+        .container{
+           display: grid; 
+           grid-template-areas: 
+           "header header header header"
+            "nav main main first-aside"
+            "nav main main second-aside"
+            "footer footer footer footer"
+           ;
+        }
+
+       .header{
+        grid-area: header;
+       }
+       .nav{
+        grid-area: nav;
+       }
+       .main{
+        grid-area: main;
+       }
+       .first-aside{
+        grid-area: first-aside;
+       }
+       .second-aside{
+        grid-area: second-aside;
+       }
+       .footer{
+        grid-area: footer;
+       }
+    </style>
+</head>
+<body class="container">
+    <header class="header">
+        <h1>Header</h1>
+    </header>
+        <nav class="nav">
+            <li>first nav</li>
+            <li>second nav</li>
+            <li>third nav</li>
+        </nav>
+        <main class="main">
+            <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nisi perspiciatis iste velit recusandae. Itaque harum eaque, cumque unde quia perferendis ab. Nihil animi iusto deserunt repellat, autem corrupti doloribus, dolorum quidem ipsam assumenda vero cum nostrum quis provident eveniet. Repudiandae voluptate culpa enim maiores laudantium. Dignissimos eaque minima suscipit?
+
+            </article>
+            <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus dolores esse cumque alias? Porro est temporibus culpa officiis sunt exercitationem corrupti delectus harum quia magni dolorum assumenda, distinctio nisi officia explicabo non quas quae eaque nam voluptates pariatur quis eveniet?</article>
+        </main>
+        <aside class="first-aside">
+            <p>first aside</p>
+        </aside>
+        <aside class="second-aside">
+            <p>second aside</p>
+        </aside>
+        <footer class="footer">
+            <h1>footer</h1>
+        </footer>
+  
+</body>
+</html>

@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    /* justify-content: space-around; */
+    /* flex-direction: row-reverse; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    border: 4px solid green;
+    height: 100vh;
+}
+
+.item{
+    border: 2px solid violet;
+    width: 100%;
+}
